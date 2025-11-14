@@ -8,6 +8,10 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
 #include "Polygon.cpp"
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
 
 using namespace glm;
 int width = 800;
@@ -99,6 +103,22 @@ int main()
 	vertices5.push_back(vec3(-0.5f, -0.5f, 0.0f));
 	Polygon Polygon5 = Polygon(vertices5, vec3(1.0f, 1.0f, 0.0f));
 
+	std::vector<vec3> circleVerts;
+	float radius = 1.0f;
+	int numSegments = 50;              
+
+	circleVerts.push_back(vec3(0.0f, 0.0f, 0.0f)); 
+
+	for (int i = 0; i <= numSegments; i++) {
+		float angle = (float)i / numSegments * 2.0f * M_PI;
+		float x = radius * cos(angle);
+		float y = radius * sin(angle);
+		circleVerts.push_back(vec3(x, y, 0.0f));
+	}
+
+	Polygon circle(circleVerts, vec3(0.0f, 0.8f, 1.0f));  
+
+
 	ourShader.use();
 	
 	mat4 projection = mat4(1.0f);
@@ -122,23 +142,26 @@ int main()
 		//transformation = translate(transformation, vec3(-0.5f, -0.5f, 0.0f));
 		//axis.transformation(transformation);
 		axis.draw(ourShader);
+		circle.draw(ourShader);
+
 		transformation = rotate(transformation, (float)glfwGetTime(), vec3(1.0f, 0.0f, 0.0f));
 		//transformation = translate(transformation, vec3(0.5f, 0.5f, 0.0f));
-		Polygon1.transformation(transformation);
-		Polygon1.draw(ourShader);
+		
+		
+		//Polygon1.transformation(transformation);
+		//Polygon1.draw(ourShader);
 
-		Polygon2.transformation(transformation);
-		Polygon2.draw(ourShader);
+		//Polygon2.transformation(transformation);
+		//Polygon2.draw(ourShader);
 
-		Polygon3.transformation(transformation);
-		Polygon3.draw(ourShader);
+		//Polygon3.transformation(transformation);
+		//Polygon3.draw(ourShader);
 
-		Polygon4.transformation(transformation);
-		Polygon4.draw(ourShader);
+		//Polygon4.transformation(transformation);
+		//Polygon4.draw(ourShader);
 
 		//Polygon5.transformation(transformation);
 		//Polygon5.draw(ourShader);
-
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();

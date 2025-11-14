@@ -5,4 +5,5 @@ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v1
 C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Polygon.cpp(39,49): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
   (compiling source file 'Main.cpp')
   
+C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Main.cpp(113,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   GLProject.vcxproj -> C:\Users\karam\Downloads\Lecture3\Lecture3\x64\Debug\Lecture3.exe
