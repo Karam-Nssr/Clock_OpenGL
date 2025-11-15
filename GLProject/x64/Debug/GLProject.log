@@ -2,8 +2,13 @@
 C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   Scanning sources for module dependencies...
   Main.cpp
-C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Polygon.cpp(39,49): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Polygon.cpp(38,49): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
   (compiling source file 'Main.cpp')
   
-C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Main.cpp(113,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Main.cpp(138,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Main.cpp(153,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Main.cpp(181,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Main.cpp(215,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Main.cpp(216,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\karam\Downloads\Lecture3\Lecture3\GLProject\Main.cpp(217,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   GLProject.vcxproj -> C:\Users\karam\Downloads\Lecture3\Lecture3\x64\Debug\Lecture3.exe
